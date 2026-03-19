@@ -1,0 +1,32 @@
+{
+  "description": "Tracks which Sharn Inquisitive issues are on the website. The monthly cron checks Google Drive for new issues not in this list.",
+  "last_checked": "2026-03-14",
+  "issues_on_site": [
+    {"id": "nov2024", "label": "November 2024", "drive_pattern": "2024 11"},
+    {"id": "feb2025", "label": "February 2025", "drive_pattern": "2025 02"},
+    {"id": "mar2025", "label": "March 2025", "drive_pattern": "2025 03"},
+    {"id": "jun2025", "label": "June 2025", "drive_pattern": "2025 06"},
+    {"id": "jul2025", "label": "July 2025", "drive_pattern": "2025 07"},
+    {"id": "sep2025", "label": "September 2025", "drive_pattern": "2025 09"},
+    {"id": "oct2025", "label": "October 2025", "drive_pattern": "2025 10"},
+    {"id": "nov2025", "label": "November 2025", "drive_pattern": "2025 11"},
+    {"id": "feb2026", "label": "February 2026", "drive_pattern": "2026 02"},
+    {"id": "feb2026special", "label": "Feb 2026 Special Edition", "drive_pattern": "2026 February Special"}
+  ],
+  "drive_files_known": [
+    "Sharn Inquisitive 2024 11.pdf",
+    "Sharn Inquisitive 2025 02.pdf",
+    "Sharn Inquisitive 2025 03.pdf",
+    "Sharn Inquisitive 2025 07.pdf",
+    "Sharn Inquisitive 2025 09.pdf",
+    "Sharn Inquisitive 2025 10.pdf",
+    "Sharn Inquisitive 2025 11.pdf",
+    "The Sharn Inquisitive 2026 02",
+    "The Sharn Inquisitive 2026 02.pdf",
+    "The Sharn Inquisitive 2026 February Special Edition.pdf"
+  ],
+  "site_url": "https://www.perplexity.ai/computer/a/sharn-site-u3SNxD7DQ4.VMlObqxDUpg",
+  "site_project_path": "/home/user/workspace/sharn-site",
+  "total_issues": 10,
+  "date_range": "November 2024 through February 2026"
+}

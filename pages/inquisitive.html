@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+<meta charset="UTF-8">
+<base target="_self">
+<script>try{document.documentElement.setAttribute("data-theme",(document.cookie.match(/(?:^|;\s*)sharn-theme=(\w+)/)||[])[1]||"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Sharn Inquisitive — Sharn: City of Towers</title>
+<meta name="description" content="Archive of all 10 issues of The Sharn Inquisitive newspaper, Nov 2024 - Feb 2026">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=zodiak@400,500,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../base.css">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="../index.html" class="site-logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Sharn sigil">
+        <path d="M14 2L2 14l12 12 12-12L14 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <path d="M14 7L7 14l7 7 7-7-7-7z" fill="currentColor" opacity="0.15"/>
+        <circle cx="14" cy="14" r="2.5" fill="currentColor" opacity="0.6"/>
+        <path d="M14 2v5M14 21v5M2 14h5M21 14h5" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+      </svg>
+      <span class="site-logo__text">Sharn<span class="site-logo__accent">:</span> City of Towers</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+    <nav class="site-nav" role="navigation">
+      <a href="../index.html" class="site-nav__link">Home</a>
+      <a href="inquisitive.html" class="site-nav__link site-nav__link--active">The Inquisitive</a>
+      <a href="politics.html" class="site-nav__link">Politics</a>
+      <a href="houses.html" class="site-nav__link">Noble Houses</a>
+      <a href="factions.html" class="site-nav__link">Factions</a>
+      <a href="locations.html" class="site-nav__link">Locations</a>
+      <a href="mysteries.html" class="site-nav__link">Mysteries</a>
+      <a href="culture.html" class="site-nav__link">Culture</a>
+      <a href="timeline.html" class="site-nav__link">Timeline</a>
+      <a href="people.html" class="site-nav__link">People</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<main class="container" style="padding-bottom: var(--space-16);">
+  <div class="page-header">
+    <p class="section__label">Newspaper Archive</p>
+    <h1 class="page-header__title">The Sharn Inquisitive</h1>
+    <p class="page-header__desc">The city's newspaper of record. Ten issues spanning November 2024 through February 2026, chronicling the scandals, murders, and marvels of the City of Towers.</p>
+  </div>
+
+  <img src="../assets/Sharn-Inquisitive-Masthead.jpg" alt="The Sharn Inquisitive masthead banner" style="width: 100%; height: auto; border-radius: var(--radius-lg); margin-bottom: var(--space-10); display: block;">
+
+  <p class="section__label">Select an Issue</p>
+  <div class="issue-grid" style="margin-top: var(--space-4);">
+    <div class="issue-card issue-card--active" data-issue="nov2024"><span class="issue-card__date">November 2024</span><span class="issue-card__count">5 articles</span></div>
+    <div class="issue-card" data-issue="feb2025"><span class="issue-card__date">February 2025</span><span class="issue-card__count">3 articles</span></div>
+    <div class="issue-card" data-issue="mar2025"><span class="issue-card__date">March 2025</span><span class="issue-card__count">11 articles</span></div>
+    <div class="issue-card" data-issue="jun2025"><span class="issue-card__date">June 2025</span><span class="issue-card__count">9 articles</span></div>
+    <div class="issue-card" data-issue="jul2025"><span class="issue-card__date">July 2025</span><span class="issue-card__count">12 articles</span></div>
+    <div class="issue-card" data-issue="sep2025"><span class="issue-card__date">September 2025</span><span class="issue-card__count">7 articles</span></div>
+    <div class="issue-card" data-issue="oct2025"><span class="issue-card__date">October 2025</span><span class="issue-card__count">6 articles</span></div>
+    <div class="issue-card" data-issue="nov2025"><span class="issue-card__date">November 2025</span><span class="issue-card__count">10 articles</span></div>
+    <div class="issue-card" data-issue="feb2026"><span class="issue-card__date">February 2026</span><span class="issue-card__count">7 articles</span></div>
+    <div class="issue-card" data-issue="feb2026special"><span class="issue-card__date">Feb 2026 Special</span><span class="issue-card__count">Ascension Race</span></div>
+  </div>
+
+  <div class="ornament"><span class="ornament__line"></span><span class="ornament__diamond"></span><span class="ornament__line"></span></div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: NOVEMBER 2024 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="nov2024">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">November 2024</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Pact Day Highlights</h3>
+      <p class="newspaper__byline">by Claudius Aurelian, Editor-in-Chief</p>
+      <div class="newspaper__body">
+        <p>Today, we honored the great forethought and resourcefulness of our ancestors who signed the Pact which established the City of Sharn as a bright and shining beacon of culture and power.</p>
+        <p>In a gesture of unity and friendship, House Hanassa brokered a deal that settled the matter of honor between cousins Atticus Corvoni and Nerissa Corvoni. Both swore at a Witness Stone in front of a curious crowd that the matter was resolved to their satisfaction. As a result, their duel, which would have taken place on the Parade Grounds on Sunday is canceled.</p>
+        <p>The Parade Festivities were marred on several occasions when foul anarchists audaciously assaulted Noble carriages. No less than six separate instances occurred! Did this miscreants act in collusion? Is it an anarchistic plot? Where will these criminals strike next?</p>
+        <p>Four of the offenders had been captured and were given their 10 lashes in the nearest public square.</p>
+        <p>House Mardikov sponsored a public banquet on the lower levels where the poor were given sips of a new, experimental, hunger-relieving draught crafted by their alchemists.</p>
+        <p>In honor of Pact Day, the High Magistrates have commuted all death sentences this week to service to the state in Ground-Level Work Crews.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Theatre Highlights</h3>
+      <p class="newspaper__byline">by Zakaiu Duskhunter, Entertainment</p>
+      <div class="newspaper__body">
+        <p>The show Death at the Opera at the Pinnacle Theatre, jewel of the Menthis Plateau, closed this week. Initially praised for its quirky humor and innovative hijinx, this mainstay of Sharn theatre had been running continually at the Pinnacle for the last 10 years. Fashions change, and even the latest reboot with new costumes and artificer-enhanced staging failed to work magic upon its audience who simply found it too old-fashioned, predictable, and simply boring.</p>
+        <p>Va-Va-Va-Voom! The All-Gender, All-Species Review in the Lower Menthis District's Pitt House Theatre has been attracting quite a bit of attention from everyone who can afford the tickets. Members of several Noble Houses might or might not be in the masked and cloaked audience. Sources close to this author report sightings of Lord Q--, Duchess B--, and even one of the High Magistrates beneath the masks and veils!</p>
+        <p>Of interest to those in the Northedge area is a new bard at the Pickled Rose, Vekel Vekelsson, a storyteller with a dramatic flair. If you tire of his weird tales of life in a village on the surface, he weaves word-pictures of classics of Sharn history. Appearing Tuesdays and Fridays.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">In Memorium</h3>
+      <div class="newspaper__body">
+        <p>The Honorable Lord Jeramiah Cecilio died of wounds suffered in his duel against Antonio Salernus over an alleged gambling debt. Our condolences to the Cecelio family.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">What Is the Pan-City Alchemical &amp; Artifice Research Institute Up To?</h3>
+      <p class="newspaper__byline">by Inundatio, Freelancer</p>
+      <div class="newspaper__body">
+        <p>Rumors abound about the super-secret new innovations from the PCA&amp;ARI. This writer has learned about an invitation-only event showcasing these gadgets and offering exclusive sponsorship opportunities for one or more Noble Houses. The original meeting would have been at the Grand Aqueduct Hotel, but has been moved to an undisclosed location. Rest assured, gentle reader, this writer will do her utmost to be there and share all of the latest gossip with you!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">The Del Coeur Emerald Stolen!</h3>
+      <p class="newspaper__byline">by Inundatio, Freelancer</p>
+      <div class="newspaper__body">
+        <p>Last week, the famous emerald disappeared after hours from the Museum of Imperial Romantic History.</p>
+        <p>The emerald had been a gift from Emperor Augustus to his paramour, the notorious actress Felicia Del Coeur over 500 years ago.</p>
+        <p>The museum had acquired the emerald only recently from the Shulkov family estate sale. The famous Felicia had been the last notable member of that faded Noble house, now faded into obscurity. It had been on display in a secure, alarmed display case. The theft occurred after hours.</p>
+        <p>A reward of 1,000 gp is offered for its return.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: FEBRUARY 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="feb2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">February 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Gala Gone Wrong!</h3>
+      <p class="newspaper__byline">by Inundatio, Staff Writer</p>
+      <div class="newspaper__body">
+        <p>Lady Ilyra Boromar's fabulous fete celebrating the culture and cuisine of the Talenta Plains began as a splendid affair at Far Hearth, her beautiful estate on Middle Menthis. Noteworthy personages in attendance included Miranda Vexallin (art broker to those of means and taste), Tavian d'Orien (how daring to invite this disgraced noble heir!), Captain Jorath Valshar (the charming privateer), Lady Syra and Kaelor Vyrune (was that some friction between the cousins?), Masha Rask (goblin investigator based in the Cogs), and Aleana Lysarre (potion-crafter catering to the wealthy, with her beauty-enhancing potions!).</p>
+        <p>The evening began with light music and a delicious buffet of traditional Plains dishes. The korkora was the best this writer has ever eaten! (Even better than Greenfields, I must say.)</p>
+        <p>Rumors indicate that a high-stakes game of Nine Reeds caused immense fortunes to change hands several times. Who will be hocking the family silver after this evening? This Inquisitive wants to know and will share with you as soon as I do!</p>
+        <p>Instead of the much-anticipated, artful fireworks display by Speciatti, a renowned pyrotechnician, explosions and fires wracked the villa, burning it to the ground.</p>
+        <p>Saber, an Imperial Guard Warforged attending for unknown reasons, was fundamental in alerting the household to danger and its quick action saved many lives. No fatalities or significant injuries have been reported.</p>
+        <p>While no cause has been reported, varying theories include anti-empire rebels, organized crime, and personal vendettas.</p>
+        <p>Captain Falastari of the Sharn Watch is leading the investigation. He refused to comment.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Theatre Highlights</h3>
+      <p class="newspaper__byline">by Zakaiu Duskhunter, Entertainment</p>
+      <div class="newspaper__body">
+        <p>Sharn is rich in entertainment options with different theaters and offering interesting options.</p>
+        <p>In Upper Menthis Plateau, the Art Temple only stages original works. These plays with overt political and social themes are often hit-or-miss, but the theater itself is worth experiencing even a mediocre play. Every surface of the stage can be infused with illusion. The stage can suddenly appear to be on fire or transformed into a battlefield scene.</p>
+        <p>The Korranor, located in the Clifftop district of Dura is small, but offers exceptional physical entertainment with productions emphasizing stage combat, acrobatics, and even explosions!</p>
+        <p>The Silvermist Theater in the Callestan district of Lower Dura had been one of my favorites many years ago when I started my career. Sadly, it has fallen into grave disrepair. Many budding performers start or end their careers in this rundown, old theater, attempting novel, daring performances.</p>
+        <p>The Pitt House Theatre in Lower Menthis is currently closed due to a duel featuring Duchess B-- that escalated into a mass melee leaving 10 dead.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Alchemical Splendor &amp; Terror in the Sky!</h3>
+      <p class="newspaper__byline">by Inundatio, Staff Writer</p>
+      <div class="newspaper__body">
+        <p>This lucky writer was able to gain entry to the super-secret Pan-City Alchemy &amp; Artifice Research Institute's ultra-exclusive event previewing their new creations.</p>
+        <p>Held aboard the Lightning Swift airship, a half-dozen noble houses attended, vying for exclusive rights to PCA&amp;ARI's innovative devices.</p>
+        <p>Among the luminaries were the rather reserved Sir Benigno the 14th of House Venator (impeccably dressed as one would expect from his house) and Lord Perigrine of House Absconditus.</p>
+        <p>A luxurious aerial tour of the city, demonstrations by Artificer Facere, the head of the Pan-City Guild himself, and both entertainment and scrumptious food provided by the Swift's crew were already making the day remarkable, but then the truly unexpected happened!</p>
+        <p>Security (provided by the Dauntless Agency) found a bomb on board!</p>
+        <p>The nefarious device would have completely destroyed the airship and rained death and destruction upon the city below!</p>
+        <p>Amid the delicate defusing of the devastating device, a flock of Spine Devils attacked!</p>
+        <p>The bomb emitted a high-pitched whine that caused all the Tieflings aboard (including myself, gentle reader) great discomfort and seemed to draw the devils to it.</p>
+        <p>A dozen devils attacked, smashing through windows and harrying the ship as Captain Swift strove to fly to a less-populated area. Swords wielded by the Dauntless Agency and some of the nobles aboard slowly defeated the spine devils while Agents disassembled the bomb.</p>
+        <p>I was there in the middle of it all!</p>
+        <p>I must say I was very impressed by Captain Swift and crew. The Lightning Swift is a lovely luxury vessel.</p>
+        <p>The Dauntless Detective Agency, partnering with Quade and Associates, also proved very competent. The team aboard was led by, of all possibilities, a Kenku named Kleet and a Human named Vekel who'll be giving audiences a first-hand account of the adventure at the Pickled Rose in Northedge.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: MARCH 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="mar2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">March 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Imperial Celebration Approaches</h3>
+      <div class="newspaper__body">
+        <p>As our Empire's beloved leader, Emperor Zamash-Kadur, nears the 25th anniversary of his ascent to the High Throne, the city begins to prepare for a lavish acknowledgement of this milestone. Even though the date is still months away, local merchants have begun laying in extra stock for the week-long celebration. Which noble family will throw the most lavish, well-attended soiree? And which house will bankrupt itself trying? We have our suspicions!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Epistemological Conference</h3>
+      <div class="newspaper__body">
+        <p>Morgrave University hosted an academic conference sponsored by House Hanissa on the epistles and other writings of the late R.R. Scrititori. Over 20 scholars attended the prestigious event.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Opportunities at Morgrave</h3>
+      <div class="newspaper__body">
+        <p>Officials from the prestigious university announced several new openings in their junior faculty, funded by a generous grant from House Vyrune. Rumors persist that these opportunities were created by the recent disappearance of a large Morgrave expedition into the Deep, but Provost Elderan refused to comment.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Anarchist Arsonists!</h3>
+      <div class="newspaper__body">
+        <p>The Rusty Rail experienced an anarchist attack. Now that the Smoke Has Cleared, the tavern has resumed business.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Local Artifice Shop Closes</h3>
+      <div class="newspaper__body">
+        <p>The Spark &amp; Spanner, which had supplied the residents of Upper Dura with magical gadgets and fine clockwork for over 25 years, unexpectedly shut its doors last week. Owner Livia Cantilius was unavailable for comment. At this time it is unknown what other business might move into its choice location in the Redstone district, but we'll update you when we know!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Peace in the Reaches</h3>
+      <div class="newspaper__body">
+        <p>Reports from the front indicate that imperial forces have succeeded in quashing the so-called Greensinger Rebellion that had erupted in the Eldeen Reaches sixteen months ago. Military officials informed this reporter that separatist violence has dropped to "minimal levels" and that soldiers could expect to return home from these haunted woods within the next six months.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Dark New Vintage from Vinnick</h3>
+      <div class="newspaper__body">
+        <p>Wine merchant Orlan Vinnick announced the arrival of the first shipment of post-Gloom wine from House Necato's vineyards of Breland. Vinnick declared the new vintage, called Shadow Red, as "potent" and "bursting with spicy flavor." He also declared the supply "extremely limited," so curious oenophiles should pick up a case immediately!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Exterminations Planned</h3>
+      <div class="newspaper__body">
+        <p>A Rat Infestation has been reported in Tavick's Landing and affected businesses will be serviced by the Tarkanan Pest Control Company this week. "We've numerous traps ready for the rats we're hunting" TPCC asserts.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Quarantine Predicted</h3>
+      <div class="newspaper__body">
+        <p>A new sickness spreads through the Lower Cogs district with many fatalities, primarily the very young or the very old. Initial symptoms include first fatigue, excessive sleeping plagued by nightmares, and finally bleeding cuticles and tear ducts. The illness has a very high mortality rate.</p>
+        <p>Bookies are taking bets on the likelihood of quarantine before week's end. While the rest of us just acknowledge with gratitude the diligence of Sharn's Kenku.</p>
+        <p>The Imperial Physician, Artifex Medicinae Cantillius reminds us to follow the law:</p>
+        <p>Do not touch any dead bodies. Do pin a scrap of white cloth to the exterior of the building. Do not summon the Sharn Watch unless foul play is evident.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">'Til Death Do Us Part</h3>
+      <div class="newspaper__body">
+        <p>Lord Drevan ir'Roole petitioned for and was granted a writ of divorce from his wife Lady Nora ir'Roole due to attempted mariticide, which to the great sadness of many, continues to be against the law. He offers a reward of 25 gp for verifiable information about her present whereabouts, a robust 500 gp reward for her capture alive, or a mere 100 gp reward for proof of her demise.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Art Extravaganza!</h3>
+      <div class="newspaper__body">
+        <p>Miranda Vexallin is hosting an art auction next week at the Elite Emporium Auction House for an anonymous seller. Is it Lady S-- to pay off her gambling debts? Is it Lord I-- suddenly short on funds? Is it Lord Q-- seeking to cover up an indiscretion? This author asserts that getting an invitation to the auction to see the art for sale is amazingly difficult because everyone who's anyone wants to see the artwork and items to see if they recognize the seller.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: JUNE 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="jun2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">June 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Sun Sets on the Horizon?</h3>
+      <div class="newspaper__body">
+        <p>The Horizon Wellness Institute, where the rich and powerful visit to clear their minds of everyday troubles, has announced that it is no longer accepting new patients. What's more, existing long-term patients are being released into the custody of their families. The head of the institute, Doctor Edna Kessler, was unavailable for comment despite this reporter's diligent efforts. What will the Institute's wealthy supporters make of this development?</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Bloody Murder in Lower Dura</h3>
+      <div class="newspaper__body">
+        <p>A well-known gang/family of enforcers and thugs, Mama Pain and Her Boyz, met a gruesome end last night in their home in Lower Dura. The Sharn Watch shared few details, though several guards were observed throwing up outside the gang headquarters. Kenku took away a dozen bodies. Are citizens no longer safe in the city?</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Vigil on the Move?</h3>
+      <div class="newspaper__body">
+        <p>After dropping out of sight for several days, the warforged prophet known as Vigil was sighted aboard a lightning rail bound for the frontier province of Aundair. We look forward to his return to Sharn. Our streets aren't quite as interesting without his loudly proclaimed visions!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">After Hours Art Theft</h3>
+      <div class="newspaper__body">
+        <p>Yesterday morning, officials at the Ezrekiel Gallery were stunned to find several pieces missing from the walls of the exhibit in Upper Menthis. When this reporter asked Sharn Watch officers if there was any connection to a similar theft at the Museum of Imperial Romantic History several weeks ago, the interview was abruptly concluded. Do we have a new master thief at work?</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Morgrave University Locates Whisperstone Dig</h3>
+      <div class="newspaper__body">
+        <p>Felicity Amaryth, noted scholar and archeologist, returns from a successful expedition below the Cogs. Professor Amaryth graciously thanked her colleague Adina Hanissa and her Dauntless crew for their timely intervention when she failed to return as scheduled.</p>
+        <p>"The dig is remarkable for its state of preservation. Not only is there a fully functional Whisperstone, we found an ancient Goblin area with traps and riddles. We retrieved artifacts once belonging to the famed historian Epicetus," Amaryth notes. "Morgrave scholars will study our find and publish academic papers on it for many years to come."</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Noble Wedding Back On</h3>
+      <div class="newspaper__body">
+        <p>The highly anticipated union of Lord Denir Hanissa and Lady Marith Necato, postponed last fall under mysterious circumstances, is reportedly back on the calendar for spring. Expect plenty of flowers and fireworks!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Guard Killed in Jail Riot</h3>
+      <div class="newspaper__body">
+        <p>Following a disturbance at the Dura Penitentiary, the body of a prison guard was found in an alley behind the facility, dead of an apparent knife wound. Jail officials had no comment. Our condolences to the Sattler family.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Mithral Tower Robbery!</h3>
+      <div class="newspaper__body">
+        <p>The Tears of the Angels, a priceless pearl necklace was stolen from Duke and Duchess Demell's vault in a penthouse of the Mithral Tower. There's no sign of forced entry and the magical wards were not triggered. 100 gp is offered for any information leading to it. The Sharn Watch was unavailable for comment.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Sharn Inquisitive Scavenger Hunt</h3>
+      <div class="newspaper__body">
+        <p>Over the next few issues, the newspaper will publish clues leading to the starting point of the Scavenger Hunt. Keep reading for the first clue:</p>
+        <p>You've seen my name. Next issue, I'll flood you with a clue about where to start looking.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: JULY 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="jul2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">July 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Love Is in the Air?</h3>
+      <div class="newspaper__body">
+        <p>Airship captain Jorath Valshar has been seen in the company of a series of young, beautiful companions in recent weeks. Is the infamous privateer looking for a special someone to tame her wild streak? Or is she simply sampling the wares in advance of a long journey?</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Vyrune Scion on the Rise</h3>
+      <div class="newspaper__body">
+        <p>Lysander Vyrune has been named the newest member of the Board of Provosts at Morgrave University. Typically such a position is a reward for years of academic service, but the young Vyrune noble had only achieved the rank of Visiting Lecturer. Is House Vyrune exerting influence in a bid to raise its standing in Sharn? Or is this another example of "all flash, no substance"?</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Sparks Rekindled?</h3>
+      <div class="newspaper__body">
+        <p>Was that Livia Cantilius that a keen-eyed onlooker spotted sneaking into the back of the Spark &amp; Spanner two nights ago? The doors are still closed, but perhaps the secret behind the artificer's mysterious closure of her shop might be revealed soon!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Dissident Protest Quelled</h3>
+      <div class="newspaper__body">
+        <p>A small group of troublemakers marched through Skyway yesterday, demanding that the Ministry of Defense share "secret death tolls" among soldiers fighting on the front. These rabble-rousers quickly scattered when the Imperial Guard showed up, leaving behind only muddy footprints and a few broken windows.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Soldiers Return Home</h3>
+      <div class="newspaper__body">
+        <p>On a brighter note, the first lightning rail service carrying homeward-bound soldiers from the Eldeen Reaches returned to Sharn yesterday. These haggard heroes were greeted by family and friends upon their arrival. We look forward to many more happy reunions in the coming months.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Blue Skies in the West?</h3>
+      <div class="newspaper__body">
+        <p>Many loyal readers have asked for more details on a persistent story that keeps cropping up. Supposedly, travelers from beyond the Shard Mountains claim that large swathes of the Lost Lands are mysteriously Gloom-free, enjoying blue skies and sunlight. So far, this reporter has been unable to verify these tall tales. Even our sources in the Ministry of Information aren't talking. But that doesn't seem to stop people from repeating the story.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Reward Increased!</h3>
+      <div class="newspaper__body">
+        <p>The Tears of the Angels, a priceless pearl and diamond necklace stolen from Duke and Duchess Demell's vault in a penthouse of the Mithral Tower now has a reward of 200 gp leading to its return. Investigator Quade Umbrielle reports he's hot on the case and claims that the reward will be his within days.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Scavenger Hunt</h3>
+      <p class="newspaper__byline">by Inundatio, Staff Reporter</p>
+      <div class="newspaper__body">
+        <p>Yes, darlings! I will be your happy host for the Sharn Inquisitive Scavenger Hunt and flood you with information. Our hunt will take through Lower Dura, the Cogs, Tavick's Landing, and end at Morgrave University.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Morgrave University Faculty Fatalities</h3>
+      <div class="newspaper__body">
+        <p>Tragedy comes in pairs at Morgrave University. In the past month, both Alchemist Professor Kaelem &amp; Alchemist Faculty Scholar Lorianna were found dead under suspicious circumstances. While initially ruled a suicide, there are rumors that it could have something to do with alchemical experiments happening at the university. Department Chair Zolara could not be reached for comment.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Platinum District Councilman Accused of Attempted Poisoning</h3>
+      <div class="newspaper__body">
+        <p>A sunset sky cruise was disrupted on Friday when a duel broke out between Councilman Urtain's champion and a local fighter. Councilman Urtain, sponsor of the Alchemical Oversight Bill, was accused of trying to poison a guest with a contraption hidden in his clothing. Urtain was turned over to the Sharn Watch for further questioning.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Domus Gallery Debuts Exhibit of Late 4th Century Sculptures</h3>
+      <div class="newspaper__body">
+        <p>A favorite among art collectors in Upper Menthis, the Domus Gallery is hosting a gala for the opening of their newest exhibit. "Each sculpture in this collection is a silent witness to the shifting tides of belief in the Sharn empire" says curator Numina Kiracas. Given the recent art thefts, this reporter hopes that Domus Gallery has invested in extra security. The exhibition is expected to run for the next 3 months.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Fire in the Cogs Damages Coppernock Foundry</h3>
+      <div class="newspaper__body">
+        <p>A series of explosions rocked the foundry late last night, sending workers fleeing into the tunnels. Flames lit up the industrial district until dawn as fire brigades, aided by summoned water elementals, battled the blaze. It took several hours to bring the fire under control. Authorities have not yet determined the cause of the explosion. No injuries have been reported.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: SEPTEMBER 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="sep2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">September 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Imperial Celebration Underway</h3>
+      <div class="newspaper__body">
+        <p>The month-long anniversary event recognizing Emperor Zamash-Kadur's quarter-century reign kicks off tonight with the first of many galas, a private soiree hosted by House Vyrune at Sannid's Restaurant in Upper Central. Originally scheduled for just a week, the imperial celebration has been extended to fill an entire month of the social calendar.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Whodunit Crowd a Who's Who</h3>
+      <div class="newspaper__body">
+        <p>A one-week-only revival of the classic mystery The Ratcatcher is drawing Sharn's notable nobles to the Grand Stage in Upper Menthis. Duchess Demell was sighted at last night's show, once again wearing the Tears of the Angels, her priceless pearl-and-diamond necklace that recently resurfaced. The entire run of the play sold out quickly, but the Necato family has graciously sponsored a limited number of day-of-show tickets for each evening's performance, available for free to those willing to spend the day queueing up.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">New Jewel in Skyway</h3>
+      <div class="newspaper__body">
+        <p>Tonight's grand opening of the Imperial Skydocks marks the completion of a massive construction project. This glittering facility allows airships to serve the wealthy neighborhood directly, enabling the residents to come and go without requiring skycoach transfers to Highest Towers in the Upper Central. Rumors that House Mardikov was the primary investor for the new skydock could not be confirmed.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Mystery Climber in Upper Central</h3>
+      <div class="newspaper__body">
+        <p>Multiple witnesses have claimed to see a lone figure scaling structures in the Mithral Tower and Platinum Heights districts. Theories abound as to the identity of this bold individual, from intrepid cat burglar to foolhardy thrillseeker. No notable robberies have been reported from any of the shops or residences in question. Nonetheless, investigator Quade Umbrielle insists that he's close to identifying the culprit.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">New Minister Named</h3>
+      <div class="newspaper__body">
+        <p>Just a few days after the unexpected retirement of Lord Akmenos as the Imperial Minister of Information, his replacement was sworn in during a quiet ceremony. The naming of Cassian Moreau, formerly of the Ministry of Defense, to this august post was met with some surprise among knowledgeable sources. Whispers suggest that noble backing may have promoted the relatively young Moreau above more qualified candidates, while others quietly suggest that the move is intended to distance the new minister from his predecessor. At this time, we still cannot confirm rumored sightings of Imperial Guard agents at the former minister's estate immediately preceding the public announcement of his retirement.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Record-Setting Auction</h3>
+      <div class="newspaper__body">
+        <p>Lord Taeledothol ir'Vown's apartment, furniture, and personal effects were auctioned off to robust competition. The bidders for the deceased power-broker and influencer's property likely hoped to gain some tidbits of information that could be parlayed into profit. Even items of little apparent use, such as his enchanted boot cleaner and umbrella went for astronomical sums.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">A Rogue by Any Other Name</h3>
+      <div class="newspaper__body">
+        <p>Former Lady ir'Roole, Nora Murlock was spotted in Sharn recently. Her former husband, Lord Drevan ir'Roole had been awarded a divorce absolute recently after his wife had tried to have him killed. She fled the city with a substantial amount of gold. Now she's been spotted, and dear reader, it will titillate you with the shocking forwardness of it, with Drevan ir'Roole's ne'erdowell cousin Lord Malakai ir'Roole who resides on a private sky-barge.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: OCTOBER 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="oct2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">October 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Silver Jubilee Concludes with Fanfare</h3>
+      <div class="newspaper__body">
+        <p>The month-long festival celebrating the reign of Emperor Zamash-Kadur wrapped up with a city-wide concert featuring musicians from around the empire performing in six different locations simultaneously. The showcase piece was a triumphant new march from up-and-coming composer Nadia Ponticca, blending classical motifs with strains of tribal music from the Talenta Plains. The estimated audience for the concert exceeded twenty-five thousand listeners of all ages.</p>
+        <p>This writer, dear reader, was enraptured by the performance of the orchestra that played in Upper Menthis. Truly a once-in-a-lifetime event!</p>
+        <p>Tribal instruments from Talenta Plains halflings have been selling at a premium price.</p>
+        <p>The Sharn Tempo Press can't print the sheet music fast enough to keep up with demand!</p>
+        <p>Everyone wants a souvenir from this remarkable occasion. Look for a special edition of the Sharn Inquisitive detailing performers, performances, and behind-the-scenes gossip about the event.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">What the Kenku Saw</h3>
+      <div class="newspaper__body">
+        <p>Following the success of The Ratcatcher, the Grand Stage gives its audiences a new mystery farce.</p>
+        <p>A missing heiress? A stolen statue? Identical twins? Mistaken identity?</p>
+        <p>This play has it all, along with a Kenku butler!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Who's Canoodling Now?</h3>
+      <div class="newspaper__body">
+        <p>Was that Lady Zemireh on the arm of Lord Xandovier Vyrune at last night's performance of the Golden Apple, or are our eyes deceiving us? And what lucky gentleman was spotted dining with young Lady Eleahleh last Saturday afternoon in the Grand Plaza? Contact our reporter to share your observations!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Councilor Jiran ir'Tain Found Guilty of Murder</h3>
+      <div class="newspaper__body">
+        <p>The former Council member stood trial this week, largely due to Lady Katarina ir'Vown's efforts to prosecute him for the murder of her brother. The judge and learned jury found him guilty of three counts of murder: Lord Taeledothoil ir'Vown, Master Kaelen of Morgrave University and Lorianna the Scribe of the Morgrave University Library.</p>
+        <p>All of the ir'Tain assets have been seized by the Empire. Jiran ir'Tain was executed immediately upon sentencing and his remaining family sentenced to the surface work camps.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Morgrave University Library ir'Vown Memorial Dedication</h3>
+      <div class="newspaper__body">
+        <p>In memory of her brother, Taeledothoil ir'Vown, Lady Katherine endowed a new wing of the Morgrave University Library to be devoted to political studies. The dedication ceremony will be held Sunday afternoon.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Bomb Plot Thwarted</h3>
+      <div class="newspaper__body">
+        <p>Imperial Guard sources confirmed that the so-called "Gear-Breaker," responsible for briefly disrupting Tavick's Landing with a makeshift explosive, is now in custody. According to officials, no other locations were at risk. House Vyrune claims the hasty evacuation during their hosted soiree at Sannid's Restaurant was due to an "unconnected disruption."</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: NOVEMBER 2025 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="nov2025" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">November 2025</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Waste Collection Woes</h3>
+      <div class="newspaper__body">
+        <p>The Department of Sanitation continues to promise that they're close to sorting out the confusion that has many businesses stuck behind piles of trash, not to mention seepage from elemental runoff. Some whisper that the recently promoted director, Yeliza Garville, is completely overwhelmed by her new responsibilities.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Lost Volumes See Print</h3>
+      <div class="newspaper__body">
+        <p>Fans of gritty protagonists such as Dirk Daring, Hell-Raiser Helga, and Hobnob the Robbin' Goblin were overjoyed at recent news that long-lost sequels for these series have been discovered. The new books will finally see print thanks to the newly established Dauntless Publishing company, operating from a restored press in Lower Dura.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Student Protests Continue</h3>
+      <div class="newspaper__body">
+        <p>Morgrave University classes have been canceled for a third consecutive day due to anti-government protests on campus. Reports of violence and damage appear sparse. Officials promise that "rabble-rousing trespassers" will soon be identified and arrested.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Court Backlog Grows</h3>
+      <div class="newspaper__body">
+        <p>Last month saw the retirement of a record number of justiciars responsible for overseeing the Imperial Courts of Sharn. This has created massive delays in court proceedings at all levels. Many defense advocates have leveraged this to forge bargains for their clients, typically returning these accused criminals to the streets far in advance of a typical sentence.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Iron Foundry Work Stoppage</h3>
+      <div class="newspaper__body">
+        <p>A series of equipment failures have plagued the Iron Foundry in the Cogs. Estimated repairs will take about two weeks.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Parade in Tavick's Landing</h3>
+      <div class="newspaper__body">
+        <p>In celebration of the Three Feasts of Aundair, a series of parades are scheduled for the upper and middle levels of Tavick's Landing today. Locals can expect lavish costumes, copious Aundairan delicacies, and extensive travel delays moving through the ward.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">A Taste of Aundair in Menthis!</h3>
+      <p class="newspaper__byline">by Inundatio, Staff Writer</p>
+      <div class="newspaper__body">
+        <p>Darlings, forget the parades! The true celebration of Aundair is at Sharn's exclusive new restaurant, The Aundairian Easel. This writer braved the crush to get into the Upper Menthis establishment, and it is divine!</p>
+        <p>Owned by the dashing Marquis Elar d'Vino, the decor features glittering illusions and whispering portraits. The Marquis promises "cuisine as art," and the Aundairan delicacies come with prices that would make a Vyrune blush.</p>
+        <p>This writer even spotted Lady Zemireh herself, sampling a delightful red vintage. Reservations are already booked for a month, but rest assured, darlings, I will find a way back in to report all the juicy details!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Illusions of Grandeur at Art Temple</h3>
+      <p class="newspaper__byline">by Zakaiu Duskhunter, Entertainment</p>
+      <div class="newspaper__body">
+        <p>The Art Temple in Upper Menthis has debuted its most ambitious project yet: The Whispering Court. This writer was left stunned as the entire stage, using the theater's famed illusion infusions, transformed from a shimmering palace into a terrifying, shadow-filled battlefield in the blink of an eye.</p>
+        <p>The play itself, a rather heavy-handed political allegory, was almost secondary to the breathtaking visual spectacle. While perhaps not as riotously fun as What the Kenku Saw over at the Grand Stage, it is a technical marvel. See it, if only to doubt your own eyes.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">A Whodunit in the West Box!</h3>
+      <p class="newspaper__byline">by Inundatio, Staff Writer</p>
+      <div class="newspaper__body">
+        <p>Darlings, this writer almost dropped her opera glasses! The theatre has been drawing all of Sharn's notable nobles, as you know. But it seems the real mystery wasn't on the stage. It was happening in the velvet shadows of a private box!</p>
+        <p>And who, you gasp, were the stars of this titillating performance? None other than the very married Lady Claudia Aemilius and the equally unavailable Lord Flavius Mericure!</p>
+        <p>While the rest of us were engrossed in a recent delightful farce, this pair seemed far more interested in their own script. This writer witnessed hands held in the dark, heads leaning scandalously close for hushed whispers, and a shared flask that seemed to inspire far more than just applause!</p>
+        <p>One must wonder what Lord Aemilius and Lady Mericure would think of their spouses' sudden, shared passion for the theatre. Is this merely a newfound appreciation for the arts, or the opening scene of a tragedy that will have the whole city talking? This writer, for one, will be watching for the second act!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Sharn Watch Cutbacks</h3>
+      <div class="newspaper__body">
+        <p>Denizens in the lower districts of the city report a severe shortage of city guards on the streets. Areas with regular patrols are now sometimes going a day or more with no Watch presence at all. Officials had no comment, but rumor has it that a significant number of officers have left the force in recent weeks, which might explain the issue.</p>
+      </div>
+    </article>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: FEBRUARY 2026 -->
+  <!-- ============================================================ -->
+  <div class="newspaper" data-issue-content="feb2026" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">February 2026</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Terror in the Tall Towers!</h3>
+      <div class="newspaper__body">
+        <p><strong>BLOOD AND SPLINTERS TO RAIN FROM THE SKIES AS THE "ASCENSION RACE" RETURNS!</strong></p>
+        <p>Honest Citizens, Bar Your Windows and Keep Your Children Indoors! A dark shadow of madness has fallen over the City of Towers! Today, the skies above Sharn will not be filled with the peaceful commerce of honest merchants, but with the screaming engines and reckless abandon of the ASCENSION RACE! Yes, the illegal, no-holds-barred suicide sprint through the narrowest, most treacherous bridges of our fair city is back. Fiends and thrill-seekers are tuning their skycoaches to explode, ready to trade their lives, and yours, for a purse of blood-money!</p>
+        <p><strong>Will No One Think of the Pedestrians?!</strong></p>
+        <p>Expect shattered glass raining into the Lower Wards! Expect flaming debris plummeting to the Cogs! These lawless sky-jockeys care nothing for the lives of the working man. They will cut corners, ram their rivals, and scrape the very sides of our beloved spires. Do not walk the skybridges today!</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Lights in the Sewers</h3>
+      <div class="newspaper__body">
+        <p>Residents in Lower Tavick's Landing report an eerie golden glow pulsing from storm drains late at night. One observer claims he heard humming, "like a choir singing underwater." City sanitation officials maintain the phenomenon is a harmless byproduct of elemental runoff.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Skyway Socialite Vanishes</h3>
+      <div class="newspaper__body">
+        <p>Partygoers report that hostess Lady Eloise Halvaren, cousin to our beloved Emperor Zamash-Kadur, disappeared halfway through a celebratory toast, leaving her wine glass hanging in mid-air. House staff politely escorted guests to the exit, and have repeatedly refused comment since.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Falling Gargoyle Wakes Locals</h3>
+      <div class="newspaper__body">
+        <p>Residents of Mithral Tower were startled awake last night by the sound of a massive sculpture crashing through the glass ceiling of their building's ballroom. City officials suggested an "elemental disturbance" might have dislodged the heavy stone sculpture from its position on an upper story of the tower.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Family Wedding</h3>
+      <div class="newspaper__body">
+        <p>The Gilded Lotus hosted the nuptials of the goddaughter of "Lord &amp; Lady S" to the heir of the Cecillio family. An underworld family joining with a patrician one. Happy smiles abounded. This newspaper wishes the best for bride Liana and groom Matteo. Speculation abounds about the S family. Can the match give them a modicum of respectability? Certainly, the only true asset the Cecillio family has is its title.</p>
+      </div>
+    </article>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Hollow Hope Orphans Witness "Dragon" Smuggled Through the Slums!</h3>
+      <div class="newspaper__body">
+        <p>Citizens, weep for the state of our City Watch! While the constabulary slumbers in their feather beds and ignores the plight of the lower wards, who is left to stand guard? The destitute, shivering children of Lower Dura! Yes, dear readers, the urchins of The Hollow Hope orphanage have come forward with a tale so terrifying it will shatter your fragile sense of security!</p>
+        <p><strong>A SCALED TERROR IN THE STREETS!</strong></p>
+        <p>While huddled in the soot-choked shadows of our lower levels, these innocent street-sparrows saw it with their own wide eyes! A massive, rattling cargo wagon, groaning under the weight of a slumbering, ancient horror, wheeled right past their very doors!</p>
+        <p>Little Pip, bless his soot-stained face, swears upon the Sovereign Host he saw a massive, spiked reptilian tail slipping from beneath the heavy, chain-wrapped tarpaulins! Sweet, barefoot Elara claims the very cobblestones hissed and radiated a furnace-like heat as the sinister caravan rumbled by! The terrified children cry out for their mothers!</p>
+        <p>Other sources report rough-looking cutthroats smuggling a huge crate through the lower wards, tossing heavy purses of silver to corrupt gate-guards to ensure their dreadful cargo passed in the dead of night! A dragon? Likely not, but some huge dinosaur or other fell beast. Plucked right from the fiery bowels of the Cogs and carted out of the city limits!</p>
+        <p>Sleep lightly, Sharn... the monsters are no longer just in the bedtime stories at the Hollow Hope!</p>
+      </div>
+    </article>
+
+    <div class="newspaper__article" style="background: var(--color-surface-offset-2); border: 2px solid var(--color-primary); border-radius: var(--radius-lg); padding: var(--space-6); text-align: center; margin-bottom: var(--space-10);">
+      <p style="font-size: var(--text-xs); letter-spacing: 0.15em; text-transform: uppercase; color: var(--color-text-faint); margin-bottom: var(--space-3);">Advertisement</p>
+      <h3 class="newspaper__headline" style="color: var(--color-primary); margin-bottom: var(--space-4);">The Emerald Claw Wants You</h3>
+      <div class="newspaper__body" style="columns: 1; text-align: center;">
+        <p style="max-width: none; margin-inline: auto;"><strong>SEARCHING FOR PURPOSE? NEED A CAREER?</strong></p>
+        <p style="max-width: none; margin-inline: auto; font-size: var(--text-lg); color: var(--color-text); font-weight: 500;">THE EMERALD CLAW WANTS YOU</p>
+        <p style="max-width: none; margin-inline: auto;">FIND A RECRUITER IN YOUR DISTRICT AND SIGN UP TODAY!</p>
+        <p style="max-width: none; margin-inline: auto;"><strong>MAKE A DIFFERENCE. DON THE GREEN.</strong></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- ISSUE: FEBRUARY 2026 SPECIAL - ASCENSION RACE EDITION -->
+  <!-- ============================================================ -->
+  <div class="newspaper newspaper--special" data-issue-content="feb2026special" style="display:none;">
+    <div class="newspaper__masthead">
+      <h2 class="newspaper__title">The Sharn Inquisitive</h2>
+      <p class="newspaper__date">Special Ascension Race Edition &bull; February 2026</p>
+    </div>
+
+    <article class="newspaper__article">
+      <h3 class="newspaper__headline">Eyewitness to Aerial Anarchy! My Ride to Hell and Back Aboard the Gilded Albatross!</h3>
+      <p class="newspaper__byline">by Innundatio, Exclusive Embedded Correspondent</p>
+      <div class="newspaper__body">
+        <p>SHARN. If you looked up into the smog today, dear readers, you didn't see the sun. You saw fire, falling masonry, and the explosive end of the most disastrous Ascension Race this city has ever witnessed! And I should know. I was strapped to the deck of the winning ship, praying to the Sovereigns while the sky burned around me.</p>
+        <p>At the center of this hurricane of destruction was desperate heiress Lianna ir'Clarn, piloting a flying oxidized-gold scrap-heap known as The Gilded Albatross. But she didn't win this race alone. She had the "Dauntless Agency" on board, and let me tell you, "dauntless" doesn't even begin to cover the sheer, unadulterated madness I witnessed.</p>
+
+        <p><strong>A Crew of Chaos</strong></p>
+        <p>The chaos started before the starting horn even blew. Daask enforcers breached our Lower Dura hangar, demanding protection money. It was there I saw the Dauntless Agency go to work.</p>
+        <p>Adina, a Tiefling archaeologist and Professor at Morgrave University hailing from the up-and-coming noble House Hanissa and close personal friend of ir'Clarn, proved she was just as good at breaking heads as she is at unearthing ancient ruins! She fought off stone gargoyles without breaking a sweat, all while shouting navigation coordinates over the roar of the engines. Meanwhile, Kleet, a sharp-eyed Kenku investigator, directed the team as Vekel Vekelson literally pieced together our sabotaged steering cables with one hand while dodging alchemist's fire with the other!</p>
+        <p>And the soundtrack to this violence? A frantic, upbeat, and utterly surreal jazz melody courtesy of Cheery!Cheery!Cheery! (better known to the local tavern scene as Jasmine Jazzman). The Kenku musician stood fearlessly on the bow, blasting a brass horn that somehow harmonized with the shrieking of our overtaxed air elemental!</p>
+
+        <p><strong>Pirates, Poetry, and Plummeting Prototypes</strong></p>
+        <p>The moment we hit the open air, the gloves came off. We were immediately broadsided by the notorious sky-pirate Captain Kaelen "Slipstream" Vance aboard The Bloodwind. Grappling hooks bit into our hull, and pirates swung across the dizzying five-hundred-foot drop.</p>
+        <p>Below decks, the goblin mechanic, Plog, worked to keep the engines running and patch up the gilt-flaking hull.</p>
+        <p>After a fierce altercation, the Albatross repelled the boarders. As the ships disengaged, the engines of The Bloodwind seem to have malfunctioned and exploded! Raining even more death and destruction on the city below.</p>
+        <p>Through it all, the well-known storyteller Vekel Vekelson was ducking swinging cutlasses and I was taking furious notes. I heard him narrating the crew's heroic strikes in real-time, completely unfazed by the fact that we were hurtling through the Bazaar of the Hundred Tents, shattering glass kiosks and scattering flocks of dire pigeons!</p>
+        <p>My pen didn't even stop when we witnessed the most horrific crash of the day right off our starboard bow. House Cannith's experimental vessel, The Paradigm, collided head-on with The Marrow-Wake, a horrifying Karrnathi ghost-ship. The two vessels locked together in a blinding flash of necrotic fog and raw electricity, spiraling down into the Dagger River in a spectacular fireball!</p>
+
+        <p><strong>A Rigged Finish Line!?!</strong></p>
+        <p>The true scandal awaited at the top of the city. As Lianna pushed the Albatross toward the Skyway finish line, an armored Syndicate barge illegally dropped into our flight path. A rogue mage held a detonator, threatening to blow the finish line archway out of the sky using unstable Khyber dragonshards!</p>
+        <p>Kleet, the sharp-eyed investigator led the team boarding the Syndicate barge. At one point, the ship stern descended sharply, causing the barge to tilt at a steep angle. Syndicate goblins slid across the deck, Kleet hung onto the steering column, and Vekel worked desperately at the bomb rigged to explode the finishing arch.</p>
+        <p>I won't spoil the ending of Vekel's next great epic, but watching the Dauntless Agency leap onto that hovering barge to disarm an arcane bomb just seconds before we tore through the winner's ribbon is something I will never forget.</p>
+        <p>Lianna ir'Clarn walks away with the grand prize, though this reporter has learned that every last copper of those winnings went straight to the Boromar Clan to settle her disgraced father's exorbitant gambling debts! With her family's estate finally secure, one has to wonder what is next for the high-flying heiress. Fiercely independent, undeniably intelligent, endlessly resourceful, and possessing a heart of pure gold, Miss ir'Clarn has surely just catapulted to the top of this season's most eligible bachelorettes! Any discerning bachelor looking for a bride with grit, grace, and an iron grip on a steering column would do well to come calling.</p>
+        <p>As for The Dauntless Agency? What's next for the intrepid detective?</p>
+        <p>As for me? I'm taking the stairs from now on.</p>
+      </div>
+    </article>
+  </div>
+
+</main>
+<footer class="site-footer">
+  <p class="site-footer__text">
+    Sharn: City of Towers — A D&D Campaign Compendium
+    <br>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" style="margin-top: var(--space-2); display: inline-block;">
+      Created with Perplexity Computer
+    </a>
+  </p>
+</footer>
+<script>
+
+(function(){
+  var cards = document.querySelectorAll('.issue-card[data-issue]');
+  var sections = document.querySelectorAll('.newspaper[data-issue-content]');
+  cards.forEach(function(card) {
+    card.addEventListener('click', function() {
+      var issueId = card.getAttribute('data-issue');
+      cards.forEach(function(c) { c.classList.remove('issue-card--active'); });
+      card.classList.add('issue-card--active');
+      sections.forEach(function(s) {
+        if (s.getAttribute('data-issue-content') === issueId) {
+          s.style.display = '';
+        } else {
+          s.style.display = 'none';
+        }
+      });
+    });
+  });
+})();
+</script>
+<script>
+// Theme persistence - tries cookies, falls back to in-memory only
+(function(){
+  function getTheme() {
+    try { var m = document.cookie.match(/(?:^|;\s*)sharn-theme=(\w+)/); if (m) return m[1]; } catch(e) {}
+    return null;
+  }
+  function saveTheme(val) {
+    try { document.cookie = 'sharn-theme=' + val + ';path=/;max-age=31536000;SameSite=Lax'; } catch(e) {}
+  }
+
+  var t = document.querySelector('[data-theme-toggle]');
+  var r = document.documentElement;
+  var d = getTheme() || 'dark';
+  r.setAttribute('data-theme', d);
+
+  function updateIcon() {
+    if (!t) return;
+    t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+    t.innerHTML = d === 'dark'
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+  updateIcon();
+
+  if (t) {
+    t.addEventListener('click', function() {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      saveTheme(d);
+      updateIcon();
+    });
+  }
+})();
+</script>
+<script>
+(function(){
+  var btn = document.getElementById('nav-toggle');
+  var nav = document.querySelector('.site-nav');
+  var headerInner = document.querySelector('.site-header__inner');
+  if (!btn || !nav) return;
+  var hamburger = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  var isMobile = function() { return window.innerWidth <= 768; };
+
+  // Create close button for the overlay
+  var closeBtn = document.createElement('button');
+  closeBtn.className = 'nav-close';
+  closeBtn.setAttribute('aria-label', 'Close navigation');
+  closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+  closeBtn.style.cssText = 'display:none;position:absolute;top:20px;right:20px;color:var(--color-text);padding:8px;background:none;border:none;cursor:pointer;z-index:10;';
+
+  nav.insertBefore(closeBtn, nav.firstChild);
+
+  function setOpen(open) {
+    if (open && isMobile()) {
+      document.body.appendChild(nav);
+      nav.style.cssText = 'display:flex;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;flex-direction:column;padding:72px 24px 24px;gap:8px;overflow-y:auto;-webkit-overflow-scrolling:touch;background:var(--color-bg,#0d0b0a);';
+      closeBtn.style.display = 'block';
+    } else {
+      nav.style.cssText = '';
+      closeBtn.style.display = 'none';
+      if (nav.parentNode === document.body) headerInner.appendChild(nav);
+    }
+    nav.classList.toggle('site-nav--open', open);
+    btn.innerHTML = hamburger;
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', function() {
+    setOpen(!nav.classList.contains('site-nav--open'));
+  });
+  closeBtn.addEventListener('click', function() { setOpen(false); });
+  nav.querySelectorAll('.site-nav__link').forEach(function(link) {
+    link.addEventListener('click', function() { setOpen(false); });
+  });
+  window.addEventListener('resize', function() {
+    if (!isMobile() && nav.parentNode === document.body) {
+      setOpen(false);
+    }
+  });
+})();
+</script>
+<script src="../lightbox.js"></script>
+</body>
+</html>

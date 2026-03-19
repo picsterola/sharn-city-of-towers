@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+
+<!-- Perplexity Computer Attribution — SEO Meta Tags -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<base target="_self">
+<script>try{document.documentElement.setAttribute("data-theme",(document.cookie.match(/(?:^|;\s*)sharn-theme=(\w+)/)||[])[1]||"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharn: City of Towers — Campaign Compendium</title>
+<meta name="description" content="A comprehensive guide to the infernal empire of Sharn, its noble houses, political intrigue, and the stories told through The Sharn Inquisitive.">
+
+<!-- Fonts -->
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@300,400,500,700&f[]=zodiak@400,500,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a href="index.html" class="site-logo">
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="Sharn sigil">
+        <path d="M14 2L2 14l12 12 12-12L14 2z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+        <path d="M14 7L7 14l7 7 7-7-7-7z" fill="currentColor" opacity="0.15"/>
+        <circle cx="14" cy="14" r="2.5" fill="currentColor" opacity="0.6"/>
+        <path d="M14 2v5M14 21v5M2 14h5M21 14h5" stroke="currentColor" stroke-width="1" opacity="0.3"/>
+      </svg>
+      <span class="site-logo__text">Sharn<span class="site-logo__accent">:</span> City of Towers</span>
+    </a>
+
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+    </button>
+
+    <nav class="site-nav" role="navigation">
+      <a href="index.html" class="site-nav__link site-nav__link--active">Home</a>
+      <a href="pages/inquisitive.html" class="site-nav__link">The Inquisitive</a>
+      <a href="pages/politics.html" class="site-nav__link">Politics</a>
+      <a href="pages/houses.html" class="site-nav__link">Noble Houses</a>
+      <a href="pages/factions.html" class="site-nav__link">Factions</a>
+      <a href="pages/locations.html" class="site-nav__link">Locations</a>
+      <a href="pages/mysteries.html" class="site-nav__link">Mysteries</a>
+      <a href="pages/culture.html" class="site-nav__link">Culture</a>
+      <a href="pages/timeline.html" class="site-nav__link">Timeline</a>
+      <a href="pages/people.html" class="site-nav__link">People</a>
+      <button class="theme-toggle" data-theme-toggle aria-label="Switch to light mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero__subtitle">A D&D Campaign Compendium</p>
+  <h1 class="hero__title">Sharn</h1>
+  <p class="hero__tagline">An infernal empire of towering spires and tiefling noble houses, where power is a blade that cuts both ways and secrets are the city's true currency.</p>
+
+  <div class="ornament">
+    <span class="ornament__line"></span>
+    <span class="ornament__diamond"></span>
+    <span class="ornament__line"></span>
+  </div>
+</section>
+
+<!-- IMAGE PLACEHOLDER: Hero cityscape -->
+<div class="container" style="margin-top: calc(-1 * var(--space-12));">
+  <video autoplay loop muted playsinline poster="assets/Sharn-Panorama-Home-Page.jpg" style="width: 100%; height: auto; border-radius: var(--radius-lg); display: block;">
+    <source src="assets/Panorama-Sharn-header-video.mp4" type="video/mp4">
+    <img src="assets/Sharn-Panorama-Home-Page.jpg" alt="The towers of Sharn rising into infernal gloom">
+  </video>
+</div>
+
+<!-- EXPLORE SECTIONS -->
+<section class="section">
+  <div class="container">
+    <div class="section__header text-center">
+      <p class="section__label">Explore the City</p>
+      <h2 class="section__title">The Sharn Compendium</h2>
+      <p class="section__desc" style="margin-inline: auto;">Dive into the politics, intrigue, factions, and mysteries that shape daily life in the City of Towers.</p>
+    </div>
+
+    <div class="card-grid" style="margin-top: var(--space-10);">
+      <a href="pages/inquisitive.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">📰</div>
+        <h3 class="card__title">The Sharn Inquisitive</h3>
+        <p class="card__text">The city's newspaper of record. 10 issues spanning November 2024 through February 2026, chronicling every scandal, murder, and marvel.</p>
+        <span class="card__link">Read the archive →</span>
+      </a>
+
+      <a href="pages/politics.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">👑</div>
+        <h3 class="card__title">Power & Politics</h3>
+        <p class="card__text">Emperor Zamash-Kadur's Silver Jubilee, the Akmenos-to-Moreau ministry transition, and the institutional decay gnawing at the empire's foundations.</p>
+        <span class="card__link">Explore the landscape →</span>
+      </a>
+
+      <a href="pages/houses.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">🏛️</div>
+        <h3 class="card__title">Noble Houses</h3>
+        <p class="card__text">Vyrune, Hanissa, Boromar, Necato, Mardikov, Venator, Absconditus, and the lesser families whose feuds shape the city.</p>
+        <span class="card__link">View the houses →</span>
+      </a>
+
+      <a href="pages/factions.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">⚔️</div>
+        <h3 class="card__title">Factions & Organizations</h3>
+        <p class="card__text">The Dauntless Agency, the Sharn Watch, the Emerald Claw, Daask, the Boromar Clan, and more. Who holds real power?</p>
+        <span class="card__link">See the factions →</span>
+      </a>
+
+      <a href="pages/locations.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">🗺️</div>
+        <h3 class="card__title">Locations</h3>
+        <p class="card__text">From Skyway's gilded towers to the Cogs' soot-choked depths. Theatres, taverns, galleries, and the bridges between.</p>
+        <span class="card__link">Explore the districts →</span>
+      </a>
+
+      <a href="pages/mysteries.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">🌑</div>
+        <h3 class="card__title">Mysteries & Threats</h3>
+        <p class="card__text">The Gloom, Vigil the Warforged Prophet, serial art thefts, sewer lights, smuggled dragons, and Lady Halvaren's vanishing.</p>
+        <span class="card__link">Investigate →</span>
+      </a>
+
+      <a href="pages/culture.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">🎭</div>
+        <h3 class="card__title">Culture & Society</h3>
+        <p class="card__text">The theatre scene, gossip columns, food and wine, dueling culture, and the social fabric of an infernal metropolis.</p>
+        <span class="card__link">See what's playing →</span>
+      </a>
+
+      <a href="pages/timeline.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">📜</div>
+        <h3 class="card__title">Timeline</h3>
+        <p class="card__text">A chronological record of major events from November 2024 through February 2026, as reported by The Sharn Inquisitive.</p>
+        <span class="card__link">View the timeline →</span>
+      </a>
+
+      <a href="pages/people.html" class="card" style="text-decoration: none;">
+        <div class="card__icon">🪶</div>
+        <h3 class="card__title">Notable People</h3>
+        <p class="card__text">A living directory of 77 individuals who shape the City of Towers, from the Emperor's inner circle to the street-level operators of Lower Dura.</p>
+        <span class="card__link">Browse the directory →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- LATEST FROM THE INQUISITIVE -->
+<section class="section section--alt">
+  <div class="container">
+    <div class="section__header">
+      <p class="section__label">Latest Headlines</p>
+      <h2 class="section__title">From The Sharn Inquisitive</h2>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <article class="newspaper__article">
+          <h3 class="newspaper__headline">Terror in the Tall Towers!</h3>
+          <p class="newspaper__byline">The Sharn Inquisitive — February 2026</p>
+          <p class="card__text">Blood and splinters to rain from the skies as the Ascension Race returns. Honest citizens, bar your windows and keep your children indoors!</p>
+        </article>
+        <article class="newspaper__article">
+          <h3 class="newspaper__headline">Skyway Socialite Vanishes</h3>
+          <p class="newspaper__byline">The Sharn Inquisitive — February 2026</p>
+          <p class="card__text">Lady Eloise Halvaren, cousin to Emperor Zamash-Kadur, disappeared halfway through a celebratory toast, leaving her wine glass hanging in mid-air.</p>
+        </article>
+      </div>
+      <div>
+        <article class="newspaper__article">
+          <h3 class="newspaper__headline">Eyewitness to Aerial Anarchy!</h3>
+          <p class="newspaper__byline">By Innundatio, Special Ascension Race Edition</p>
+          <p class="card__text">My ride to hell and back aboard The Gilded Albatross! At the center of this hurricane of destruction was desperate heiress Lianna ir'Clarn and the Dauntless Agency.</p>
+        </article>
+        <article class="newspaper__article">
+          <h3 class="newspaper__headline">Hollow Hope Orphans Witness "Dragon" Smuggled Through Slums</h3>
+          <p class="newspaper__byline">The Sharn Inquisitive — February 2026</p>
+          <p class="card__text">Little Pip swears upon the Sovereign Host he saw a massive, spiked reptilian tail slipping from beneath heavy, chain-wrapped tarpaulins!</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p class="site-footer__text">
+    Sharn: City of Towers — A D&D Campaign Compendium
+    <br>
+    <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" style="margin-top: var(--space-2); display: inline-block;">
+      Created with Perplexity Computer
+    </a>
+  </p>
+</footer>
+
+<script>
+
+// Scroll reveal
+(function(){
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('reveal--visible');
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+})();
+</script>
+
+<script>
+// Theme persistence - tries cookies, falls back to in-memory only
+(function(){
+  function getTheme() {
+    try { var m = document.cookie.match(/(?:^|;\s*)sharn-theme=(\w+)/); if (m) return m[1]; } catch(e) {}
+    return null;
+  }
+  function saveTheme(val) {
+    try { document.cookie = 'sharn-theme=' + val + ';path=/;max-age=31536000;SameSite=Lax'; } catch(e) {}
+  }
+
+  var t = document.querySelector('[data-theme-toggle]');
+  var r = document.documentElement;
+  var d = getTheme() || 'dark';
+  r.setAttribute('data-theme', d);
+
+  function updateIcon() {
+    if (!t) return;
+    t.setAttribute('aria-label', 'Switch to ' + (d === 'dark' ? 'light' : 'dark') + ' mode');
+    t.innerHTML = d === 'dark'
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+      : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+  }
+  updateIcon();
+
+  if (t) {
+    t.addEventListener('click', function() {
+      d = d === 'dark' ? 'light' : 'dark';
+      r.setAttribute('data-theme', d);
+      saveTheme(d);
+      updateIcon();
+    });
+  }
+})();
+</script>
+<script>
+(function(){
+  var btn = document.getElementById('nav-toggle');
+  var nav = document.querySelector('.site-nav');
+  var headerInner = document.querySelector('.site-header__inner');
+  if (!btn || !nav) return;
+  var hamburger = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>';
+  var isMobile = function() { return window.innerWidth <= 768; };
+
+  // Create close button for the overlay
+  var closeBtn = document.createElement('button');
+  closeBtn.className = 'nav-close';
+  closeBtn.setAttribute('aria-label', 'Close navigation');
+  closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>';
+  closeBtn.style.cssText = 'display:none;position:absolute;top:20px;right:20px;color:var(--color-text);padding:8px;background:none;border:none;cursor:pointer;z-index:10;';
+
+  nav.insertBefore(closeBtn, nav.firstChild);
+
+  function setOpen(open) {
+    if (open && isMobile()) {
+      document.body.appendChild(nav);
+      nav.style.cssText = 'display:flex;position:fixed;top:0;left:0;right:0;bottom:0;z-index:9999;flex-direction:column;padding:72px 24px 24px;gap:8px;overflow-y:auto;-webkit-overflow-scrolling:touch;background:var(--color-bg,#0d0b0a);';
+      closeBtn.style.display = 'block';
+    } else {
+      nav.style.cssText = '';
+      closeBtn.style.display = 'none';
+      if (nav.parentNode === document.body) headerInner.appendChild(nav);
+    }
+    nav.classList.toggle('site-nav--open', open);
+    btn.innerHTML = hamburger;
+    document.body.style.overflow = open ? 'hidden' : '';
+  }
+  btn.addEventListener('click', function() {
+    setOpen(!nav.classList.contains('site-nav--open'));
+  });
+  closeBtn.addEventListener('click', function() { setOpen(false); });
+  nav.querySelectorAll('.site-nav__link').forEach(function(link) {
+    link.addEventListener('click', function() { setOpen(false); });
+  });
+  window.addEventListener('resize', function() {
+    if (!isMobile() && nav.parentNode === document.body) {
+      setOpen(false);
+    }
+  });
+})();
+</script>
+<script src="lightbox.js"></script>
+</body>
+</html>
