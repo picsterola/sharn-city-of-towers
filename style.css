@@ -319,6 +319,67 @@
   color: var(--color-primary-hover);
 }
 
+/* === FEATURED FACTION CARDS === */
+.faction-featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.faction-featured .card {
+  border-color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+}
+
+.faction-featured .card__emblem {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--space-4);
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+.faction-featured .card__portrait {
+  width: 100%;
+  border-radius: var(--radius-md);
+  margin-top: auto;
+}
+
+.faction-featured .card__portrait-caption {
+  text-align: center;
+  margin-top: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+}
+
+.faction-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-6);
+}
+
+.faction-grid .card img {
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .faction-featured {
+    grid-template-columns: 1fr;
+  }
+  .faction-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .faction-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* === IMAGE PLACEHOLDER === */
 .image-placeholder {
   background: var(--color-surface-offset);
