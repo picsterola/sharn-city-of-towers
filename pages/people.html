@@ -20,7 +20,7 @@
 <script>try{document.documentElement.setAttribute("data-theme",(document.cookie.match(/(?:^|;\s*)sharn-theme=(\w+)/)||[])[1]||"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notable People - Sharn: City of Towers</title>
-<meta name="description" content="A living directory of 98 individuals who shape the City of Towers">
+<meta name="description" content="A living directory of notable individuals who shape the City of Towers">
 <meta property="og:image" content="../assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -359,7 +359,7 @@
   <div class="page-header">
     <p class="section__label">Directory</p>
     <h1 class="page-header__title">Notable People of Sharn</h1>
-    <p class="page-header__desc">A living directory of 98 individuals who shape the City of Towers. From the Emperor's inner circle to the street-level operators of Lower Dura, every name tells a story.</p>
+    <p class="page-header__desc">A living directory of <span id="total-people-desc"></span> individuals who shape the City of Towers. From the Emperor's inner circle to the street-level operators of Lower Dura, every name tells a story.</p>
     <a href="https://docs.google.com/spreadsheets/d/1WkCjpaA9rd8M_cAK06s6f5Dlr6S6qWxK2tOGXDQvaQA/edit" target="_blank" rel="noopener noreferrer" class="edit-link">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
       Edit this directory in Google Sheets
@@ -374,7 +374,7 @@
   <div class="scrying-bar">
     <input type="text" id="people-search" class="scrying-bar__input" placeholder="Search by name, affiliation, or details..." autocomplete="off" aria-label="Search the directory">
     <svg class="scrying-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <span class="scrying-bar__count" id="result-count">98 of 98</span>
+    <span class="scrying-bar__count" id="result-count"><span id="result-count-init"></span></span>
   </div>
 
   <!-- Filter chips -->
@@ -430,6 +430,7 @@
   </p>
 </footer>
 
+<script src="../people-data.js"></script>
 <script>
 // === PEOPLE DATA ===
 const PEOPLE = [
@@ -576,12 +577,12 @@ function renderCards() {
   if (filtered.length === 0) {
     grid.innerHTML = '';
     noResults.style.display = 'block';
-    resultCount.textContent = '0 of 77';
+    resultCount.textContent = '0 of ' + PEOPLE.length;
     return;
   }
 
   noResults.style.display = 'none';
-  resultCount.textContent = filtered.length + ' of 98';
+  resultCount.textContent = filtered.length + ' of ' + PEOPLE.length;
 
   grid.innerHTML = filtered.map(p => `
     <div class="card card--person">
@@ -608,6 +609,10 @@ filterBar.addEventListener('click', (e) => {
 
 // Initial render
 renderCards();
+
+// Populate dynamic count in page description
+const descEl = document.getElementById('total-people-desc');
+if (descEl) descEl.textContent = PEOPLE.length;
 
 // === CONNECTIONS NETWORK ===
 function buildNetwork() {
