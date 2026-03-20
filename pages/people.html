@@ -20,7 +20,7 @@
 <script>try{document.documentElement.setAttribute("data-theme",(document.cookie.match(/(?:^|;\s*)sharn-theme=(\w+)/)||[])[1]||"dark")}catch(e){document.documentElement.setAttribute("data-theme","dark")}</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Notable People - Sharn: City of Towers</title>
-<meta name="description" content="A living directory of 98 individuals who shape the City of Towers">
+<meta name="description" content="A living directory of notable individuals who shape the City of Towers">
 <meta property="og:image" content="../assets/og-image.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
@@ -359,7 +359,7 @@
   <div class="page-header">
     <p class="section__label">Directory</p>
     <h1 class="page-header__title">Notable People of Sharn</h1>
-    <p class="page-header__desc">A living directory of 98 individuals who shape the City of Towers. From the Emperor's inner circle to the street-level operators of Lower Dura, every name tells a story.</p>
+    <p class="page-header__desc">A living directory of <span id="total-people-desc"></span> individuals who shape the City of Towers. From the Emperor's inner circle to the street-level operators of Lower Dura, every name tells a story.</p>
     <a href="https://docs.google.com/spreadsheets/d/1WkCjpaA9rd8M_cAK06s6f5Dlr6S6qWxK2tOGXDQvaQA/edit" target="_blank" rel="noopener noreferrer" class="edit-link">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
       Edit this directory in Google Sheets
@@ -374,7 +374,7 @@
   <div class="scrying-bar">
     <input type="text" id="people-search" class="scrying-bar__input" placeholder="Search by name, affiliation, or details..." autocomplete="off" aria-label="Search the directory">
     <svg class="scrying-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
-    <span class="scrying-bar__count" id="result-count">98 of 98</span>
+    <span class="scrying-bar__count" id="result-count"><span id="result-count-init"></span></span>
   </div>
 
   <!-- Filter chips -->
@@ -430,108 +430,9 @@
   </p>
 </footer>
 
+<script src="../people-data.js"></script>
 <script>
-// === PEOPLE DATA ===
-const PEOPLE = [
-  {"name":"Adalbrecht Lorber","affiliation":"Socialite","details":"Nine-time winner of the Brightlance Manor Costume Contest."},
-  {"name":"Adina Hanissa","affiliation":"Dauntless Agency / Morgrave","details":"Tiefling archaeologist and professor who works as a Dauntless field agent."},
-  {"name":"Aleana (Aleanna) Lysarre","affiliation":"Alchemist","details":"Potion-crafter catering to the wealthy, known for her beauty unguents."},
-  {"name":"Aloysius & Celestino","affiliation":"House Absconditus","details":"Matriarch and consort of the house, known for their library of forbidden lore."},
-  {"name":"Antonio Salernus","affiliation":"Duelist","details":"Killed Lord Jeramiah Cecilio in a duel over a gambling debt."},
-  {"name":"Artificer Facere","affiliation":"Pan-City Guild","details":"Head of the Pan-City Alchemy & Artifice Research Institute."},
-  {"name":"Atticus & Nerissa Corvoni","affiliation":"House Corvoni","details":"Cousins who settled an honor dispute at a Witness Stone on Pact Day."},
-  {"name":"Atticus Verres","affiliation":"Rusty Rail","details":"Social worker operating out of the Rusty Rail to help immigrants find homes and jobs."},
-  {"name":"Awww!Awww!","affiliation":"Broken Swords","details":"Kenku artificer part of the Broken Swords organization"},
-  {"name":"Bellona","affiliation":"Sharn Watch","details":"Lieutenant of the Sharn Watch; operates in Tavick's Landing"},
-  {"name":"Big Mondo","affiliation":"Boromar Clan","details":"District boss for Boromar Clan"},
-  {"name":"Captain Falastari","affiliation":"Sharn Watch","details":"Investigator leading the inquiry into the Far Hearth fire."},
-  {"name":"Captain Jorath Valshar","affiliation":"Privateer","details":"Charming privateer and airship captain of the Calypso's Bride"},
-  {"name":"Captain Orson Kell","affiliation":"Imperial Government","details":"Captain of the Imperial Guard; now imprisoned in the Pit"},
-  {"name":"Captain Kaelen \"Slipstream\" Vance","affiliation":"Sky-Pirate","details":"Captain of The Bloodwind who attacked The Gilded Albatross during the Ascension Race."},
-  {"name":"Captain Swift","affiliation":"Airship Captain","details":"Captain of the luxury airship Lightning Swift."},
-  {"name":"Cassian Moreau","affiliation":"Imperial Government","details":"Newly appointed Imperial Minister of Information."},
-  {"name":"Chadz","affiliation":"Underworld","details":"Goblin smuggler\"; suspected associate of several criminal organizations; Lower Quarter"},
-  {"name":"Cheery!Cheery!Cheery! (Jasmine Jazzman)","affiliation":"Dauntless Agency","details":"Kenku musician and Dauntless crewmember."},
-  {"name":"Claudius Aurelian","affiliation":"The Sharn Inquisitive","details":"Editor-in-Chief of the newspaper."},
-  {"name":"Councilman Urtain","affiliation":"Imperial Government","details":"Sponsor of the Alchemical Oversight Bill, arrested for attempted poisoning."},
-  {"name":"Dante","affiliation":"Broken Swords","details":"Artificer known to craft superior weapons and armor for Imperial Guard, Ministry of Defense, and noble houses"},
-  {"name":"Daria Delmoris","affiliation":"Morgrave University","details":"Survivor at the Site 12 expedition"},
-  {"name":"Deeno de Peche","affiliation":"The Restless Wheel","details":"Suave manager of the gambling hall in Lower Dura."},
-  {"name":"Dirk Dauntless","affiliation":"Dauntless Agency","details":"Namesake of the Dauntless Detective Agency."},
-  {"name":"Doctor Edna Kessler","affiliation":"Horizon Wellness Institute","details":"Head of the wellness institute that unexpectedly stopped accepting patients."},
-  {"name":"Duchess & Duke Demell","affiliation":"House Demell","details":"Mithral Tower residents whose priceless necklace, the \"Tears of the Angels\", was stolen and recovered."},
-  {"name":"Emperor Augustus","affiliation":"Historical Figure","details":"Past emperor whose paramour was the actress Felicia Del Coeur."},
-  {"name":"Emperor Cyrillus","affiliation":"Historical Figure","details":"Early emperor for whom the Protectorate of Cyre was named."},
-  {"name":"Emperor Xullan & Xullan'di","affiliation":"Historical Figures","details":"Past emperors whose reigns included the disastrous Western Reclamation."},
-  {"name":"Emperor Zamash-Kadur","affiliation":"Imperial Government","details":"Current Emperor of Tarsis, recently celebrated his Silver Jubilee."},
-  {"name":"Felicia Del Coeur","affiliation":"Historical Figure","details":"Notorious historical actress and paramour to Emperor Augustus."},
-  {"name":"Felicity Amaryth","affiliation":"Morgrave University","details":"Archaeologist rescued from a trap-filled dig below the Cogs by the Dauntless Agency."},
-  {"name":"General Augustus","affiliation":"Historical Figure","details":"Traitorous general who led a rebellion against Tarsis."},
-  {"name":"Gerry Splinter","affiliation":"Boromar Clan","details":"Head of security at Boromar villa that burned down"},
-  {"name":"Harlani Hanassa","affiliation":"House Hanissa","details":"Revered noble matron whose portrait magically recited guests' secrets."},
-  {"name":"Hawkins","affiliation":"Broken Swords","details":"Kenku fighter and apprentice to Dante; now deceased"},
-  {"name":"Inundatio","affiliation":"The Sharn Inquisitive","details":"Embedded Correspondent and Staff Writer."},
-  {"name":"Jiran ir'Tain","affiliation":"House ir'Tain","details":"Former Councilor convicted and executed for a triple murder."},
-  {"name":"Kaelor Vyrune","affiliation":"House Vyrune / Broken Swords","details":"Diabolist part of Broken Swords, scion of House Vyrune"},
-  {"name":"Katarina (Katherine) ir'Vown","affiliation":"House ir'Vown","details":"Last of House ir'Vown; prosecuted her brother's killer and endowed a library wing."},
-  {"name":"Kleet","affiliation":"Dauntless Agency","details":"Kenku investigator who leads field operations."},
-  {"name":"Lady Claudia Aemilius & Lord Flavius Mericure","affiliation":"Nobles","details":"Nobles caught in a scandalous theatre affair."},
-  {"name":"Lady Ehleahlah Ezrekiel","affiliation":"House Ezrekiel","details":"Youngest daughter of Lord Ezrekiel, subject of his matchmaking efforts."},
-  {"name":"Lady Eloise Halvaren","affiliation":"Skyway","details":"Emperor's cousin and socialite who vanished into thin air during a toast."},
-  {"name":"Lady Helgia Necato","affiliation":"House Necato","details":"Lives in Platinum Heights; filed complaint against Varjuan for \"scurrilous rumor-mongering\""},
-  {"name":"Lady Ilyra Boromar","affiliation":"Boromar Clan","details":"Prominent syndicate figure whose Talenta Plains-themed gala burned down."},
-  {"name":"Lady Lucia Aslani","affiliation":"House Aslani","details":"major domo of House Aslani"},
-  {"name":"Lady Nika Aslani","affiliation":"House Aslani","details":"distant relation to the Emperor"},
-  {"name":"Lady Syra Vyrune","affiliation":"House Vyrune","details":"Powerful noble from House Vyrune who operates mechanized battle suits; owns hidden lab"},
-  {"name":"Lady Zemireh","affiliation":"Socialite","details":"Prominent noble, major customer of Aleanna Lysarre, and frequent theatregoer."},
-  {"name":"Liana","affiliation":"Underworld","details":"Goddaughter of \"Lord & Lady S\", married Matteo Cecilio."},
-  {"name":"Lianna ir'Clarn","affiliation":"Sky-Jockey","details":"Desperate heiress who won the Ascension Race to pay off her father's debts."},
-  {"name":"Lady iljana Necato","affiliation":"House Necato / Morgrave University","details":"Reformer and instigator of recent demonstrations at Morgrave"},
-  {"name":"Livia Cantilius","affiliation":"Artificer","details":"Owner of the abruptly closed Spark & Spanner shop."},
-  {"name":"Lord & Lady S","affiliation":"Underworld","details":"Mysterious underworld figures whose goddaughter married into a patrician house."},
-  {"name":"Lord Akmenos","affiliation":"Imperial Government","details":"Former Imperial Minister of Information who retired unexpectedly."},
-  {"name":"Lord Benigno (the 14th) & Lady Estella","affiliation":"House Venator","details":"Leaders of House Venator seeking to reclaim their former standing."},
-  {"name":"Lord Denir Hanissa & Lady Marith Necato","affiliation":"Nobles","details":"Noble couple whose highly anticipated wedding was rescheduled."},
-  {"name":"Lord Drevan ir'Roole","affiliation":"House ir'Roole","details":"Secured a rare divorce after his wife tried to murder him."},
-  {"name":"Lord Ezrekiel","affiliation":"House Ezrekiel","details":"Patriarch of House Ezrekiel and a highly skilled negotiator."},
-  {"name":"Lord Jeramiah Cecilio","affiliation":"House Cecilio","details":"Died in a duel against Antonio Salernus over a gambling debt."},
-  {"name":"Lord Mithraos Aslani","affiliation":"House Aslani","details":"Head of the household for House Aslani"},
-  {"name":"Lord Malakai ir'Roole","affiliation":"House ir'Roole","details":"Ne'er-do-well cousin of Drevan living on a private sky-barge."},
-  {"name":"Lord Perigrine","affiliation":"House Absconditus","details":"Noble attendee at the Pan-City Guild preview."},
-  {"name":"Lord Taeledothol ir'Vown","affiliation":"House ir'Vown","details":"Murdered information broker whose mundane items sold for fortunes at auction."},
-  {"name":"Lord Xandovier Vyrune","affiliation":"House Vyrune","details":"Noble spotted with Lady Zemireh at the theatre."},
-  {"name":"Loric Mardikov","affiliation":"","details":"Mixed up in some apothecary work"},
-  {"name":"Lorianna the Scribe & Master Kaelen","affiliation":"Morgrave University","details":"Morgrave scholars murdered by Jiran ir'Tain."},
-  {"name":"Lysander Vyrune","affiliation":"House Vyrune","details":"Young, inexperienced noble appointed to Morgrave University's Board of Provosts."},
-  {"name":"Mama Pain","affiliation":"Underworld","details":"Gang leader in Lower Dura who met a gruesome end."},
-  {"name":"Marcus Attilius","affiliation":"","details":"Rescued by Broken Swords"},
-  {"name":"Marquis Elar d'Vino","affiliation":"The Aundairian Easel","details":"Owner of the exclusive Aundairian restaurant in Upper Menthis."},
-  {"name":"Masha Rask","affiliation":"Investigator","details":"Goblin investigator based in the Cogs."},
-  {"name":"Matteo Cecilio","affiliation":"House Cecilio","details":"Heir to the financially struggling Cecilio family who married into the underworld."},
-  {"name":"Miranda Vexallin","affiliation":"Art Broker","details":"Elite art broker who hosted an exclusive art auction; maybe imprisoned in the Pit"},
-  {"name":"Nadia Ponticca","affiliation":"Composer","details":"Composer of the triumphant march played at the Silver Jubilee concert."},
-  {"name":"Nora ir'Roole (Murlock)","affiliation":"House ir'Roole","details":"Fled Sharn after trying to have her husband, Lord Drevan, killed."},
-  {"name":"Numina Kiracas","affiliation":"Domus Gallery","details":"Curator of the Domus Gallery."},
-  {"name":"Orlan Vinnick","affiliation":"Merchant","details":"Wine merchant who introduced the rare \"Shadow Red\" vintage."},
-  {"name":"Pelagos","affiliation":"Broken Swords","details":"Goblin rogue and cook for Broken Swords organization"},
-  {"name":"Plog","affiliation":"Dauntless Agency","details":"Goblin mechanic for the Dauntless Agency."},
-  {"name":"Provost Elderan","affiliation":"Morgrave University","details":"Provost at Morgrave University."},
-  {"name":"Pyat and Sel","affiliation":"House Corvoni","details":"New warforged stolen from House Corvoni"},
-  {"name":"Quade Umbrielle","affiliation":"Investigator","details":"Local investigator tracking the Mithral Tower thief and \"mystery climber\"."},
-  {"name":"R.R. Scrititori","affiliation":"Historical Figure","details":"Late writer and scholar whose epistles were studied at a Morgrave conference."},
-  {"name":"Rallus Garrinius","affiliation":"The Pickled Rose","details":"Proprietor of The Pickled Rose inn in Northedge."},
-  {"name":"Renata Forgecraft","affiliation":"The Iron Foundry","details":"Manager of The Iron Foundry in the Cogs."},
-  {"name":"Saber","affiliation":"Imperial Guard","details":"Warforged whose quick actions saved lives during the Far Hearth gala fire."},
-  {"name":"Shine","affiliation":"Something Beautiful","details":"Warforged artificer who runs a gift shop in Tavick's Landing."},
-  {"name":"Syra & Kaelor Vyrune","affiliation":"House Vyrune","details":"Vyrune cousins spotted having public friction at a gala."},
-  {"name":"Tavian d'Orien","affiliation":"Noble","details":"Disgraced noble heir."},
-  {"name":"Varujan","affiliation":"Entertainer","details":"A \"Spirit Talker\" who performs seances for for upper-class patrons"},
-  {"name":"Vekel Vekelsson","affiliation":"Dauntless Agency","details":"Human bard, storyteller, and Dauntless field agent."},
-  {"name":"Vigil","affiliation":"Prophet","details":"Warforged prophet sighted leaving Sharn on a lightning rail."},
-  {"name":"Yeliza Garville","affiliation":"Department of Sanitation","details":"Overwhelmed Director of the Department of Sanitation."},
-  {"name":"Zakaiu Duskhunter","affiliation":"The Sharn Inquisitive","details":"Entertainment Writer."},
-  {"name":"Zolara","affiliation":"Morgrave University","details":"Department Chair at Morgrave University."}
-];
+// PEOPLE array loaded from ../people-data.js
 
 // === FILTER CATEGORIES ===
 function getCategory(affiliation) {
@@ -576,12 +477,12 @@ function renderCards() {
   if (filtered.length === 0) {
     grid.innerHTML = '';
     noResults.style.display = 'block';
-    resultCount.textContent = '0 of 77';
+    resultCount.textContent = '0 of ' + PEOPLE.length;
     return;
   }
 
   noResults.style.display = 'none';
-  resultCount.textContent = filtered.length + ' of 98';
+  resultCount.textContent = filtered.length + ' of ' + PEOPLE.length;
 
   grid.innerHTML = filtered.map(p => `
     <div class="card card--person">
@@ -608,6 +509,10 @@ filterBar.addEventListener('click', (e) => {
 
 // Initial render
 renderCards();
+
+// Populate dynamic count in page description
+const descEl = document.getElementById('total-people-desc');
+if (descEl) descEl.textContent = PEOPLE.length;
 
 // === CONNECTIONS NETWORK ===
 function buildNetwork() {

@@ -164,7 +164,7 @@
       <a href="pages/people.html" class="card" style="text-decoration: none;">
         <div class="card__icon">🪶</div>
         <h3 class="card__title">Notable People</h3>
-        <p class="card__text">A living directory of 77 individuals who shape the City of Towers, from the Emperor's inner circle to the street-level operators of Lower Dura.</p>
+        <p class="card__text">A living directory of <span id="people-count"></span> individuals who shape the City of Towers, from the Emperor's inner circle to the street-level operators of Lower Dura.</p>
         <span class="card__link">Browse the directory →</span>
       </a>
     </div>
@@ -316,5 +316,10 @@
 })();
 </script>
 <script src="lightbox.js"></script>
+<script src="people-data.js"></script>
+<script>
+  const pc = document.getElementById('people-count');
+  if (pc && typeof PEOPLE !== 'undefined') pc.textContent = PEOPLE.length;
+</script>
 </body>
 </html>
